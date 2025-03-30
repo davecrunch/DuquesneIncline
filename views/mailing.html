@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <title>Duquesne Incline</title>
+</head>
+<body>
+    <div class="topRow">
+        <a href="../index.html"><img src="../static/logo.png" width="184px" class="logo" alt="Duquense Incline Logo">
+        <h1>Duquesne <br> Incline</h1></a>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailing.html">Mailing List</a></li>
+        </ul>
+    </div>
+
+    <div class="pageHeading">
+        <h2>Join our Mailing List</h2>
+        <img class="faqsImage" src="../static/contact.jpg" alt="House at the bottom of the Incline">
+    </div>
+
+        <div class="mailingForm">
+            <h2>Sign up for our Newsletter!</h2>
+            <form action="mailto:duq.incline@duquesneincline.org" method="post" enctype="text/plain">
+                <label for="name">Name (*):</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email (*):</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" name="zip">
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone">
+
+                <label id="sms2" for="sms">I would like to receive messages via SMS text:</label><br>
+                <input type="checkbox" id="sms" name="sms" value="sms">
+
+                <input id="button" onclick="validate()" type="submit">
+                <div id="validateMsg"></div>
+            </form>
+        </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footerLinks">
+                <a href="../index.html">Home</a>
+                <a href="visit.html">Visit</a>
+                <a href="history.html">History</a>
+                <a href="maps.html">Maps</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="mailing.html">Mailing List</a>
+                <a href="credits.html">Credits</a>
+            </div>
+        </div>
+        <p class="copyright">Copyright 2025</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+    <script src="../static/weather.js"></script>
+    <script src="../static/script.js"></script>
+    <title>Duquesne Incline</title>
+</head>
+<body>
+    <div class="topRow">
+        <a href="../index.html"><img src="../static/logo.png" width="184px" class="logo" alt="Duquense Incline Logo">
+            <h1>Duquesne <br> Incline</h1></a>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailing.html">Mailing List</a></li>
+        </ul>
+    </div>
+
+    <div class="hours">
+        <h2><b>Open 6:30am - 12:30am <br>
+            Every day of the year!</b></h2>
+    </div>
+    
+    <div class="tickets">
+        <img class="ticketImage" height="260px" src="../static/ticketing.jpg" alt="Lower station building of the Duquense Incline">
+       
+        <div class="ticketText1">
+            <h2><b>No Reservations or Advance Tickets</b></h2>
+            <h4>
+                <b>Adults</b> (Ages 12-64): <br>
+                $2.50 Each Way or $5.00 Round Trip <br>
+                <b>Children</b> (Ages 6-11): <br>
+                $1.25 Each Way or $2.50 Round Trip
+            </h4>
+
+            <h3><b>Special Rates:</b></h3>
+            <h4>
+                Children 5 and under Free <br>
+                University of Pittsburgh, Carnegie Mellon,
+                Chatham University Students Free, with proper I.D. <br><br>
+                <b>GROUP RATES:</b> <br>
+                Group Rates are Valid for Any Group of 10 or 
+                More People <br>
+                Adults (Ages 12-64): <br>
+                $1.75 Each Way or $3.50 Round Trip <br>
+                Children (Ages 6-11): <br>
+                $1.00 Each Way or $1.75 Round Trip
+            </h4>
+        </div>
+
+        <div class="ticketText2">
+            <h5>
+                Cash fares as well as Port Authority bus <br>
+                passes and tickets are accepted as payment.
+                <br><br>
+                Seniors age 65 or older who present a blue <br> 
+                or yellow PRT card or a Senior Connect Card <br>
+                ride free. 
+            </h5>
+        </div>
+    </div>
+
+
+    <div class="attractionsTitle">
+        <h2>Attractions:</h2>
+    </div>
+    
+    <div class="attractions">
+
+        <div class="giftshop">
+            <div class="image-container">
+                <div class="slide">
+                    <img src="../static/giftshop1.jpg" alt="gift shop glassware">
+                </div>
+                <div class="slide">
+                    <img src="../static/giftshop2.jpg" alt="gift shop cable car plush">
+                </div>
+                <div class="slide">
+                    <img src="../static/giftshop3.jpeg" alt="gift shop collection of items">
+                </div>
+         
+                <a class="previous" onclick="moveSlides(-1)">
+                    <i class="fa fa-chevron-circle-left"></i>
+                </a>
+                <a class="next" onclick="moveSlides(1)">
+                    <i class="fa fa-chevron-circle-right"></i>
+                </a>
+            </div>
+                <div class="attractionsText">
+                    <h3>Gift Shop</h3>
+                    <p>We offer many one-of-a-kind items that were custom made for the Incline.</p>
+                </div>
+        </div>
+
+        <div class="museum">
+            <img src="../static/museum.jpg" alt="Museum building">
+            <div class="attractionsText">
+                <h3>Museum</h3>
+                <p>The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world.</p>
+            </div>
+
+        </div>
+    
+        <div class="trolleys">
+            <img src="../static/trolleys.jpg" alt="Molly's Trolleys trolley car">
+            <div class="attractionsText">
+                <h3>Molly's Trolleys</h3>
+                <p><a href="http://www.mollystrolleys.com">www.mollystrolleys.com</a> 412-281-2055</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-container">
+        <div class="weather-box">
+            <div id="weather">Loading...</div>
+        </div>
+    </div>
+
+    <div class="actionButtons">
+        <ul>
+            <li><a href="maps.html">Maps and Parking</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footerLinks">
+                <a href="../index.html">Home</a>
+                <a href="visit.html">Visit</a>
+                <a href="history.html">History</a>
+                <a href="maps.html">Maps</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="mailing.html">Mailing List</a>
+                <a href="credits.html">Credits</a>
+            </div>
+        </div>
+        <p class="copyright">Copyright 2025</p>
+    </footer>
+    
+</body>
+</html>
