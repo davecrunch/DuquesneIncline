@@ -485,6 +485,7 @@ form > #button:hover {
     background: #f5e1d5;
     height: 250px;
     padding-left: 3%;
+    padding-right: 3%;
 }
 
 .slide {
@@ -562,25 +563,65 @@ form > #button:hover {
     background: #FDF2EB;
     height: 250px;
     padding-left: 3%;
+    padding-right: 3%;
 }
 
 .trolleys img {
     width: auto;
-    max-width: 400px;
-    height: 250px;
+    max-width: 500px;
+    height: 320px;
     float: left;
 }
 
 .trolleys .attractionsText {
     display: grid;
     background: #f5e1d5;
-    height: 250px;
+    height: 320px;
     padding-left: 3%;
+    padding-right: 3%;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+  tr:nth-child(even) {
+    background-color: #efefef68;
+  }
+
+/*
+table formatting code courtesy of w3schools:
+https://www.w3schools.com/html/html_tables.asp
+*/
 
 .attractionsText h3 {
     padding-top: 20px;
-    margin-bottom: -30px;
+    
+}
+
+.fieldtrip .attractionsText{
+    display: grid;
+    background: #FDF2EB;
+    height: 300px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.fieldtrip img {
+    display: grid;
+    width: auto;
+    max-width: 400px;
+    height: 300px;
+    float: right;
 }
 
 .mailingForm {
@@ -682,4 +723,10 @@ form > #button:hover {
     background-color: #FDF2EB;
     width: 100%;
     box-sizing: border-box;
+}
+
+.creditsText {
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
